@@ -1,8 +1,9 @@
- 
-/**
- * ACS-3913 - Assignment 5
- */
 
+/**
+ * Assignment 5
+ * Sehaj Mundi
+ * 3117464
+ */
 public abstract class FileComponent {
     protected String name;
     protected FileComponent parent;
@@ -34,4 +35,6 @@ public abstract class FileComponent {
     public String getPath(){
         throw new UnsupportedOperationException();
     }
+    
+    public abstract void accept(Visitor v);
 }
