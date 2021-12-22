@@ -1,8 +1,9 @@
  
 /**
- * ACS-3913 - Assignment 5
+ * Assignment 5
+ * Sehaj Mundi
+ * 3117464
  */
-
 import java.util.Scanner;
 
 public class TestDriver{
@@ -62,7 +63,7 @@ public class TestDriver{
 
         courses.display(" ");
         
-        // testing size
+        //testing size
         System.out.println(courses.getSize());  // folder
         System.out.println(pres.getSize());     // file
         
@@ -74,12 +75,13 @@ public class TestDriver{
         Visitor backup = new BackupVisitor();
         courses.accept(backup);
         
-        // testing search
+        
         SearchVisitor search = new SearchVisitor();
         System.out.println("\nEnter the search keyword:");
         Scanner kb = new Scanner(System.in);
         String keyword = kb.next();
         search.setSearchTerm(keyword);
-        courses.accept(search);     // try "sequence", "prototype"        
+        courses.accept(search);     // try "sequence", "prototype"  
+              
     }
 }

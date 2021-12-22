@@ -1,6 +1,8 @@
- 
+
 /**
- * ACS-3913 - Assignment 5
+ * Assignment 5
+ * Sehaj Mundi
+ * 3117464
  */
 
 import java.util.Scanner;
